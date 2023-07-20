@@ -43,7 +43,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background-color: rgba(255, 255, 255, 0.663);
+      background-color: #ffffffa9;
       backdrop-filter: blur(24px);
       border-radius: 10px;
     }
@@ -328,11 +328,14 @@
 }
 
 .hamburger {
-  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 10px;
   z-index: 9999;
+  background-color: #ffffffa9;
+  backdrop-filter: blur(50px);
   svg {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 
@@ -344,13 +347,13 @@
   }
 
   .inside-nav {
-    padding: 0.6rem 2.5rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
   }
 }
 
 @media (min-width: 640px) {
   .hamburger {
-    padding: 0 1rem;
   }
   .nav_small .nav-links-small {
     padding: 2rem;

@@ -1,0 +1,50 @@
+.destination-main-bg {
+  background-image: url("./images/Lake_Manyara_National_Park.dce4fd2297e92e8e.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  height: 100vh;
+}
+.pagesummaries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .items {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    img {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.pagesummaryblock {
+  border: 2px;
+  border-color: #662020;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (min-width: 400px) {
+}
+
+@media (min-width: 640px) {
+  .pagesummaries {
+    .items {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .pagesummaries {
+    .items {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}

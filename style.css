@@ -257,7 +257,7 @@ header Section
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.663);
+  background-color: rgba(255, 255, 255, 0.662745098);
   -webkit-backdrop-filter: blur(24px);
           backdrop-filter: blur(24px);
   border-radius: 10px;
@@ -521,12 +521,16 @@ header Section
 }
 
 .hamburger {
-  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 10px;
   z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.662745098);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
 }
 .hamburger svg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media (min-width: 400px) {
@@ -536,13 +540,11 @@ header Section
     width: 80vw;
   }
   .inside-nav {
-    padding: 0.6rem 2.5rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
   }
 }
 @media (min-width: 640px) {
-  .hamburger {
-    padding: 0 1rem;
-  }
   .nav_small .nav-links-small {
     padding: 2rem;
     height: 100vh;
@@ -666,11 +668,6 @@ Main Section
 .pagecontent .paras p {
   font-size: 1.25rem;
 }
-.pagecontent .cards {
-  margin-top: 3rem;
-  display: grid;
-  gap: 2rem;
-}
 .pagecontent ul {
   margin-left: 0.3rem;
 }
@@ -680,7 +677,8 @@ Main Section
   margin-right: 0.3rem;
 }
 .pagecontent #map {
-  margin: 2rem 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   z-index: 0;
   height: 70vh;
   width: auto;
@@ -698,41 +696,6 @@ Main Section
   gap: 0.5rem;
 }
 .pagecontent .country h3 {
-  font-size: 1.7rem;
-  font-weight: bold;
-}
-
-/*---------------------------------------------------- 
- Map Section
-----------------------------------------------------*/
-/*---------------------------------------------------- 
-Map Section
-----------------------------------------------------*/
-.map {
-  display: grid;
-  gap: 3rem;
-  z-index: 0;
-}
-.map .wrap {
-  width: 100%;
-  display: grid;
-  gap: 4rem;
-  justify-content: center;
-  align-items: center;
-}
-.map .all-anchor {
-  position: relative;
-  top: -120px;
-}
-.map .country-info {
-  display: grid;
-  gap: 1.5rem;
-}
-.map .country {
-  display: grid;
-  gap: 0.5rem;
-}
-.map .country h3 {
   font-size: 1.7rem;
   font-weight: bold;
 }
@@ -902,6 +865,52 @@ Message Section
   gap: 1.5rem;
 }
 
+/*---------------------------------------------------- 
+ Section
+----------------------------------------------------*/
+.destination-main-bg {
+  background-image: url("./images/Lake_Manyara_National_Park.dce4fd2297e92e8e.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  height: 100vh;
+}
+
+.pagesummaries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagesummaries .items {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.pagesummaries .items img {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.pagesummaryblock {
+  border: 2px;
+  border-color: #662020;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (min-width: 640px) {
+  .pagesummaries .items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .pagesummaries .items {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 /*---------------------------------------------------- 
  Section
 ----------------------------------------------------*/
