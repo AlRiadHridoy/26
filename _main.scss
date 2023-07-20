@@ -20,7 +20,7 @@ Main Section
     position: absolute;
     inset: 0;
     z-index: 60;
-    top: 22%;
+    top: 6rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -29,9 +29,8 @@ Main Section
     z-index: 9999;
   }
 
-  h1 {
+  .headersoverimg {
     font-size: 1.5rem;
-    font-weight: 700;
     text-shadow: 2px 7px 5px rgba(4, 23, 15, 0.3),
       0px -4px 10px rgba(255, 255, 255, 0.2);
     background-color: #ffffffa9;
@@ -39,6 +38,14 @@ Main Section
     border-radius: 5px;
     backdrop-filter: blur(50px);
     margin-left: 0.6rem;
+    margin-right: 0.6rem;
+  }
+  h1 {
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1rem;
   }
 
   @-moz-document url-prefix() {
@@ -81,6 +88,10 @@ Main Section
     h1 {
       font-size: 3.5rem;
     }
+
+    h3 {
+      font-size: 1.3rem;
+    }
   }
 }
 
@@ -98,7 +109,7 @@ Main Section
     }
 
     .header {
-      top: 26%;
+      top: 10rem;
     }
   }
 }
@@ -108,17 +119,10 @@ Main Section
     h1 {
       font-size: 4rem;
     }
-
-    .header {
-    }
   }
 }
 
 @media (min-width: 1024px) {
-  .main-sec {
-    .header {
-    }
-  }
 }
 
 @media (min-width: 768px) {

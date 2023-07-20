@@ -584,7 +584,7 @@ Main Section
   position: absolute;
   inset: 0;
   z-index: 60;
-  top: 22%;
+  top: 6rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -592,9 +592,8 @@ Main Section
   align-items: start;
   z-index: 9999;
 }
-.main-sec h1 {
+.main-sec .headersoverimg {
   font-size: 1.5rem;
-  font-weight: 700;
   text-shadow: 2px 7px 5px rgba(4, 23, 15, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.662745098);
   padding: 0.8rem;
@@ -602,6 +601,13 @@ Main Section
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+.main-sec h1 {
+  font-weight: 700;
+}
+.main-sec h3 {
+  font-size: 1rem;
 }
 @-moz-document url-prefix() {
   .main-sec h1 {
@@ -639,6 +645,9 @@ Main Section
   .main-sec h1 {
     font-size: 3.5rem;
   }
+  .main-sec h3 {
+    font-size: 1.3rem;
+  }
 }
 @media (min-width: 400px) {
   .main-sec h1 {
@@ -650,7 +659,7 @@ Main Section
     font-size: 2.5rem;
   }
   .main-sec .header {
-    top: 26%;
+    top: 10rem;
   }
 }
 @media (min-width: 768px) {
