@@ -549,6 +549,9 @@ header Section
     padding: 2rem;
     height: 100vh;
   }
+  .inside-nav {
+    padding: 0.6rem 2.5rem;
+  }
 }
 @media (min-width: 768px) {
   .inside-nav .large-nav {
