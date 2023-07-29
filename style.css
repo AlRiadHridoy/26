@@ -277,12 +277,13 @@ header Section
 .inside-nav nav > ul li:hover .submenu {
   visibility: visible;
   opacity: 1;
-}
-.inside-nav nav > ul li:hover .submenu::before {
-  opacity: 1;
   transition: all 0.3s ease-in-out;
   -webkit-backdrop-filter: blur(24px);
           backdrop-filter: blur(24px);
+}
+.inside-nav nav > ul li:hover .submenu::before {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.0823529412);
 }
 @-moz-document url-prefix() {
   .inside-nav nav > ul li:hover .submenu::before {
@@ -616,6 +617,12 @@ Main Section
 }
 .main-sec .bg-wrapper {
   overflow: hidden;
+  border-bottom: 1.2rem solid white;
+}
+@media (min-width: 640px) {
+  .main-sec .bg-wrapper {
+    border-bottom: 1.5rem solid white;
+  }
 }
 .main-sec #bg-video {
   width: 100%;
@@ -875,6 +882,15 @@ Message Section
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
+}
+
+.contact .message {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /*---------------------------------------------------- 

@@ -61,11 +61,11 @@
         &:hover .submenu {
           visibility: visible;
           opacity: 1;
-
+          transition: all 0.3s ease-in-out;
+          backdrop-filter: blur(24px);
           &::before {
             opacity: 1;
-            transition: all 0.3s ease-in-out;
-            backdrop-filter: blur(24px);
+            background-color: #ffffff15;
           }
 
           @-moz-document url-prefix() {

@@ -56,6 +56,13 @@ Main Section
 
   .bg-wrapper {
     overflow: hidden;
+    border-bottom: 1.2rem solid white;
+  }
+
+  @media (min-width: 640px) {
+    .bg-wrapper {
+      border-bottom: 1.5rem solid white;
+    }
   }
 
   #bg-video {
