@@ -722,10 +722,6 @@ Main Section
 /*---------------------------------------------------- 
  Instagram Section
 ----------------------------------------------------*/
-.eapps-instagram-feed-header-follow-button-wrapper {
-  display: none;
-}
-
 #eapps-instagram-feed-1 > a::after,
 #eapps-instagram-feed-popup-1 > a::after {
   position: absolute;
