@@ -1,0 +1,23 @@
+.eapps-instagram-feed-header-follow-button-wrapper {
+  display: none;
+}
+
+.insta a {
+  // display: none !important;
+  // opacity: 0;
+}
+
+#eapps-instagram-feed-1 > a::after,
+#eapps-instagram-feed-popup-1 > a::after {
+  position: absolute;
+  content: "" !important;
+  inset: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: -0.7rem !important;
+  bottom: 0 !important;
+  height: 125% !important;
+  width: 110% !important;
+  background-color: #eeeedd !important;
+  z-index: 9999999999999999999;
+}

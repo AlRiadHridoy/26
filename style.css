@@ -675,7 +675,7 @@ Main Section
   }
 }
 /*---------------------------------------------------- 
- Endless Section
+ Pagecontent Section
 ----------------------------------------------------*/
 .pagecontent .wrap {
   padding: 0 2rem;
@@ -717,6 +717,28 @@ Main Section
 .pagecontent .country h3 {
   font-size: 1.7rem;
   font-weight: bold;
+}
+
+/*---------------------------------------------------- 
+ Instagram Section
+----------------------------------------------------*/
+.eapps-instagram-feed-header-follow-button-wrapper {
+  display: none;
+}
+
+#eapps-instagram-feed-1 > a::after,
+#eapps-instagram-feed-popup-1 > a::after {
+  position: absolute;
+  content: "" !important;
+  inset: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: -0.7rem !important;
+  bottom: 0 !important;
+  height: 125% !important;
+  width: 110% !important;
+  background-color: #eeeedd !important;
+  z-index: 10000000000000000000;
 }
 
 /*---------------------------------------------------- 
